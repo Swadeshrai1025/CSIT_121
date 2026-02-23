@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+a{
+    color: rgb(201, 3, 201);
+     display: inline-block;
+}
+a:hover {
+    color: blue;
+    animation: bounce 0.9s;
+}
+#firstParagraph {
+    color: blue;
+}
+.highlight {
+    color: rgb(148, 2, 2);
+}
+p {
+    font-size: 14px;
+}
+h1 {
+    color: rgb(192, 237, 96);
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    20%  { transform: translateY(-12px); }
+    45%  { transform: translateY(0); }
+    60%  { transform: translateY(-6px); }
+    70% { transform: translateY(0); }
+    85%  { transform: translateY(-3px); }
+    100% { transform: translateY(0); }
+}
