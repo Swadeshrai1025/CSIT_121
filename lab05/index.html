@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" rel="stylesheet" href="grid.css">
+    <title>Lab 05: Responsive Design</title>
+
+    <script>
+        function changeStylesheet(sheet) {
+            document.getElementById('stylesheet').setAttribute('href', sheet);
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+
+    <header id="home">
+        <h1>Learning Web Standards</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><button class="layout-btn" onclick="changeStylesheet('grid.css')">Grid Layout</button></li>
+            <li><button class="layout-btn" onclick="changeStylesheet('flex.css')">Flex Layout</button></li>
+            <li><a class="buttons" href="#lab2">Lab 02</a></li>
+            <li><a class="buttons" href="#lab3">Lab 03</a></li>
+            <li><a class="buttons" href="#lab5">Lab 05</a></li>
+        </ul>
+    </nav>
+
+    <div class="row">
+
+        <main>
+
+            <section id="lab2">
+                <h2 class="highlight">Lab 02 HTML Elements</h2>
+                <p>I have really enjoyed working on these labs and learning about HTML elements.<br>
+                But one thing that has been challenging to me is GitHub.</p>
+
+                <h3 class="highlight">What I Learned</h3>
+                <ol>
+                    <li>Why we use small letters when naming files.</li>
+                    <li>The reason behind the no space rules in HTML.</li>
+                    <li>How to properly structure an HTML document.</li>
+                </ol>
+
+                <p>Learning about HTML elements and how to use them properly was very informative and helped
+                me understand the basics of web development. I learned a lot from:</p>
+                <ul class="resource-links">
+                    <li><a class="bouncy" href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a></li>
+                    <li><a class="bouncy" href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla Developer HTML Guide</a></li>
+                </ul>
+     
+            </section>
+
+            <section id="lab3">
+                <h2 class="highlight">Lab 03 CSS Styling</h2>
+                <p>For this lab, I added a hopping effect to the links on the page.
+                To make it work, I set the links to display as inline blocks, which allows them to animate.
+                From there, I applied an animation called bounce that plays over 0.9 seconds. Using keyframes,
+                I defined the movement so the link jumps up, comes back down, does a smaller hop,
+                and gradually settles back into place. I also styled a specific element using an ID selector
+                by assigning it a unique ID in the HTML and targeting that ID in my CSS file.</p>
+        
+            </section>
+
+            <section id="lab5">
+                <h2 class="highlight">Lab 05 Responsive Design</h2>
+              <p>This module was about learning two ways to control layout in CSS — Flexbox and Grid.
+                I used Flexbox for the navigation because it is great for lining things up in a single row,
+                and Grid for the overall page structure because it lets you control both rows and columns at the same time.
+                Figuring out when to use one over the other was the hardest part, but W3Schools helped me understand the difference.
+                The main thing I learned is that Flexbox is best for small pieces of a page and Grid is best for the big picture layout.</p>
+    
+            </section>
+
+        </main>
+
+        <aside>
+            <p><b>Work Cited</b></p>
+            <p><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Mozilla Developer HTML Guide</a></p>
+            <p><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">Flexbox W3Schools</a></p>
+            <p><a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">Grid W3Schools</a></p>
+            <p><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank">Media Queries W3Schools</a></p>
+             <p><a href="https://roninoone.github.io/CSIT121stuff/practice/layouts/" target="_blank">Professor's Layouts</a></p>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p><b>&#169; 2026 Student in CSIT 121</b></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
