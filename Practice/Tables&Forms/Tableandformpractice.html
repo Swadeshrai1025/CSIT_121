@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Table and Form Practice</title>
+  </head>
+  <body>
+    <header>
+      <h1>Discussion 07 Tables and Forms</h1>
+    </header>
+ 
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Course Number</th>
+            <th>Course Name</th>
+            <th>Instructor's Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CSIT-121</td>
+            <td>Web Standards</td>
+            <td>Veronica Noone</td>
+          </tr>
+          <tr>
+            <td>CSIT-161</td>
+            <td>Introduction to Information Assurance</td>
+            <td>Wendy Chin</td>
+          </tr>
+          <tr>
+            <td>CSIT-134</td>
+            <td>Comprehensive Databases</td>
+            <td>Paulette Comet</td>
+          </tr>
+          <tr>
+            <td>CSIT-154</td>
+            <td>Database Concepts</td>
+            <td>Professor Tavegia</td>
+          </tr>
+        </tbody>
+      </table>
+ 
+      <form action="submission.html" method="get">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+ 
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+ 
+        <label for="comments">Comments:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="4"
+          required
+          minlength="2"
+          maxlength="1600"
+          placeholder="Your feedback is appreciated"
+        ></textarea>
+ 
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+ 
+    <footer>
+      <p><a href="mailto:your-email@email.ccbcmd.edu">Contact Me</a></p>
+      <p>&copy; 2026 Leaf, All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+ 
