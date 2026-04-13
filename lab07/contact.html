@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Vote | Lab 07</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────── -->
+  <nav aria-label="Site navigation">
+    <a href="index.html" class="nav-logo">🍜 Street Food Rankings</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tierlist.html">Tier List</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact / Vote</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Page Header ────────────────────────── -->
+  <header class="page-header">
+    <p class="tagline">Your Voice Counts</p>
+    <h1>Contact <span>&amp; Vote</span></h1>
+    <p>Disagree with the rankings? Tell us your take — and help us build a better tier list.</p>
+  </header>
+
+  <!-- ── Main Content ───────────────────────── -->
+  <main>
+
+    <h2 class="section-title">Leave a Comment or Cast Your Vote</h2>
+
+    <div class="form-card">
+
+      <form id="contact-form" novalidate>
+
+        <!-- ── Personal Info ────────────────── -->
+        <fieldset>
+          <legend>Your Info</legend>
+
+          <!-- Name -->
+          <div class="form-group">
+            <label for="full-name">
+              Full Name <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="full-name"
+              name="fullName"
+              placeholder="e.g. Swadesh Rai"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">
+              Email Address <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <!-- Comments -->
+          <div class="form-group">
+            <label for="comments">Comments / Feedback</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              placeholder="Disagree with the rankings? Have a food we missed? Tell us!"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <!-- ── Tier List Questions ──────────── -->
+        <fieldset>
+          <legend>Your Street Food Take</legend>
+
+          <!-- Q1: Favorite dish — radio buttons -->
+          <div class="form-group">
+            <p class="group-label">
+              1. What is your all-time favorite Nepali street food?
+              <span class="required" aria-hidden="true">*</span>
+            </p>
+            <div class="radio-group" role="radiogroup" aria-label="Favorite Nepali street food">
+              <label>
+                <input type="radio" name="favorite" value="momo" required />
+                Mo:Mo (&#2350;&#2307;&#2350;&#2307;)
+              </label>
+              <label>
+                <input type="radio" name="favorite" value="chatpate" />
+                Chatpate (&#2330;&#2335;&#2346;&#2335;&#2375;)
+              </label>
+              <label>
+                <input type="radio" name="favorite" value="panipuri" />
+                Panipuri (&#2346;&#2366;&#2344;&#2368;&#2346;&#2369;&#2352;&#2368;)
+              </label>
+              <label>
+                <input type="radio" name="favorite" value="selroti" />
+                Sel Roti (&#2360;&#2375;&#2354; &#2352;&#2379;&#2335;&#2368;)
+              </label>
+              <label>
+                <input type="radio" name="favorite" value="other" />
+                Something else (tell us in comments!)
+              </label>
+            </div>
+          </div>
+
+          <!-- Q2: Spice preference — select dropdown -->
+          <div class="form-group">
+            <label for="spice-level">2. How do you take your spice?</label>
+            <select id="spice-level" name="spiceLevel">
+              <option value="" disabled selected>&#8212; Choose your spice tolerance &#8212;</option>
+              <option value="none">No spice please</option>
+              <option value="mild">Mild &#8212; just a hint of heat</option>
+              <option value="medium">Medium &#8212; flavorful but manageable</option>
+              <option value="hot">Hot &#8212; bring it on</option>
+              <option value="extreme">Extreme &#8212; I eat ghost peppers for fun</option>
+            </select>
+          </div>
+
+          <!-- Q3: Toppings — checkboxes -->
+          <div class="form-group">
+            <p class="group-label">
+              3. Which toppings or add-ons do you always ask for?
+              <span class="group-label-note">(check all that apply)</span>
+            </p>
+            <div class="checkbox-group" role="group" aria-label="Preferred toppings">
+              <label>
+                <input type="checkbox" name="toppings" value="achar" />
+                Tomato Achar
+              </label>
+              <label>
+                <input type="checkbox" name="toppings" value="chutney" />
+                Green Chutney
+              </label>
+              <label>
+                <input type="checkbox" name="toppings" value="onion" />
+                Raw Onion &amp; Cilantro
+              </label>
+              <label>
+                <input type="checkbox" name="toppings" value="lemon" />
+                Squeeze of Lemon
+              </label>
+              <label>
+                <input type="checkbox" name="toppings" value="extra-chili" />
+                Extra Green Chili
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <!-- ── Submit ───────────────────────── -->
+        <div class="form-submit">
+          <button type="submit" class="btn-submit">Submit My Vote &#10003;</button>
+        </div>
+
+      </form>
+
+      <!-- Success message shown by JS -->
+      <div id="success-message" role="alert" aria-live="polite">
+        &#127881; Thanks for your submission! Your vote has been recorded.
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────── -->
+  <footer>
+    <p>CSIT121 Lab 07 &mdash; Leaf Rai &mdash; Community College of Baltimore County</p>
+  </footer>
+
+  <!-- ── BONUS: Form JS ──────────────────────
+       Intercepts submit, validates required fields,
+       shows a personalized success message.
+  ─────────────────────────────────────────── -->
+  <script>
+    (function () {
+      var form    = document.getElementById('contact-form');
+      var success = document.getElementById('success-message');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var name     = document.getElementById('full-name').value.trim();
+        var email    = document.getElementById('email').value.trim();
+        var favorite = form.querySelector('input[name="favorite"]:checked');
+
+        clearErrors();
+
+        var hasError = false;
+
+        if (name === '') {
+          showError('full-name', 'Please enter your name.');
+          hasError = true;
+        }
+
+        if (!isValidEmail(email)) {
+          showError('email', 'Please enter a valid email address.');
+          hasError = true;
+        }
+
+        if (!favorite) {
+          showGroupError('Favorite street food', 'Please select your favorite street food.');
+          hasError = true;
+        }
+
+        if (hasError) { return; }
+
+        var spiceEl   = document.getElementById('spice-level');
+        var spiceText = spiceEl.options[spiceEl.selectedIndex].text;
+
+        var checkedBoxes = [];
+        var boxes = form.querySelectorAll('input[name="toppings"]:checked');
+        for (var i = 0; i < boxes.length; i++) {
+          checkedBoxes.push(boxes[i].parentElement.textContent.trim());
+        }
+        var toppings = checkedBoxes.length > 0 ? checkedBoxes.join(', ') : 'None selected';
+
+        console.log('Submission:', { name: name, email: email, favorite: favorite.value, spice: spiceText, toppings: toppings });
+
+        success.textContent = 'Thanks, ' + name + '! Your vote for ' + formatFavorite(favorite.value) + ' has been recorded.';
+        success.classList.add('visible');
+        success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+        form.reset();
+      });
+
+      function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      function showError(inputId, message) {
+        var input = document.getElementById(inputId);
+        input.classList.add('input-error');
+        var errEl = document.createElement('span');
+        errEl.className   = 'field-error';
+        errEl.textContent = message;
+        input.insertAdjacentElement('afterend', errEl);
+      }
+
+      function showGroupError(groupName, message) {
+        var group = form.querySelector('.radio-group');
+        var errEl = document.createElement('span');
+        errEl.className   = 'field-error';
+        errEl.textContent = message;
+        group.insertAdjacentElement('afterend', errEl);
+      }
+
+      function clearErrors() {
+        var errors = form.querySelectorAll('.field-error');
+        for (var i = 0; i < errors.length; i++) { errors[i].remove(); }
+        var inputs = form.querySelectorAll('.input-error');
+        for (var i = 0; i < inputs.length; i++) { inputs[i].classList.remove('input-error'); }
+        success.classList.remove('visible');
+      }
+
+      function formatFavorite(value) {
+        var map = { momo: 'Mo:Mo', chatpate: 'Chatpate', panipuri: 'Panipuri', selroti: 'Sel Roti', other: 'your pick' };
+        return map[value] || value;
+      }
+    })();
+  </script>
+
+</body>
+</html>
