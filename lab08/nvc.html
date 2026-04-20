@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hiking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="home.html">Home</a>
+        <a href="nvc.html" class="active">Hiking</a>
+        <a href="nepsa.html">NepSA</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <main>
+        <h1>Nature Valley Critters</h1>
+        <img src="images/nature1.jpg" alt="Students on a hiking trip" class="center" style="width:600px; border-radius: 10px;">
+        <p>The Hiking Club, called Nature Valley Critters, is one of the most exciting clubs on campus.
+            They organize about three hikes each semester, giving students a chance to explore nature, stay active, and enjoy the outdoors together.
+            It's a great way to meet new people, relax, and experience beautiful trails throughout the semester.</p>
+
+        <article>
+            <img src="images/interfriend.jpg" alt="International Friends"
+                style="width:200px; float:right; margin-left:15px; border-radius: 15px;">
+            <h2>Meeting new People</h2>
+            <p>Nature Valley Critters is also a great place to make new friends.
+                Through the hikes and group activities, I've had the chance to meet students from different countries and cultures.
+                Some of the best people I've met in college were through this club,
+                and the friendships I made here truly made my experience more special and meaningful.</p>
+        </article>
+
+        <img src="images/natrur4.jpg" alt="Nature Valley in the hills."
+            style="width:200px; float:left; margin-right:15px; border-radius: 15px;">
+        <h2>Exploring Nature</h2>
+        <p>Being in nature every now and then is very helpful,
+            especially for a student who spends most of their time in front of a screen.
+            It gives your mind and eyes a much-needed break from assignments, phones, and computers.
+            Spending time outdoors helps reduce stress, improves focus, and makes you feel more refreshed and motivated.
+            Even a short hike or walk can make a big difference in your mood and energy.</p>
+        <img src="images/Backpacker.png" alt="Backpacker" width="30" style="float:right;">
+    </main>
+
+    <footer>
+        <p>&copy; The small image in the right corner is a PNG image.
+            I chose it because PNG supports transparent backgrounds and keeps icons sharp.
+            <a href="https://commons.wikimedia.org/wiki/File:Backpacker.png">Source</a></p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+</html>
