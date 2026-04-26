@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<superhero>
+    <Hero>
+        <Name>SuperMan</Name>
+        <power1>Laser Eyes</power1>
+        <power2>Super Strength</power2>
+        <power3>Flight</power3>
+        <Weakness>Kryptonite</Weakness>
+    </Hero>
+    <Origin>
+        <home>Krypton(Destroyed)</home>
+        <humanName>Clark Kent</humanName>
+        <kryptoneName>Kal-El</kryptoneName>
+    </Origin>
+</superhero>
