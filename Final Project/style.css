@@ -1,0 +1,92 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    margin: 20px;
+    background-image: url("images/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(250, 251, 255);
+}
+h1 {
+    text-align: center;
+}
+nav ul {
+    list-style-type: none; 
+   padding: 10px 20px;
+    border-radius: 5px;
+     border: 2px solid rgb(0, 0, 0);               
+    display: flex;             
+    justify-content: center;    
+    background-color: rgb(66, 73, 189);
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav a {
+    display: inline-block;   
+    padding: 10px 20px;        
+    background-color: #f4e9e9;    
+    color: rgba(19, 1, 1, 0.553);               
+    text-decoration: none;     
+    border-radius: 5px;          
+    border: 1px solid rgb(144, 144, 232);    
+    transition: all 0.3s ease;   
+}
+nav a:hover,
+nav a:focus {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+section {
+  background: #7972d4;
+  border-radius: var(--radius);
+  padding: 0cap;
+  margin-bottom: 1px;
+  border: 2px solid var(--blue-mid);
+}
+    
+.container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+   .box {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .box h2 {
+      margin-top: 0;
+    }
+
+.proj {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+    }
+
+ @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}   
+  .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}        
